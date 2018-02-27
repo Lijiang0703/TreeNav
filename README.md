@@ -6,6 +6,8 @@ jquery plugin
 1. 根据json数据动态生成多级树结构
 2. 选状态中时自动在activeEl元素上添加class : active
 3. 了解jquery插件的实现过程
+4. 上下翻页方法
+5. history.pushState、history.replaceState 无刷新更改url并支持回退、前进
 
 # 功能实现说明
 1. 样式以外部设置的样式为准，同时可以考虑提供一套默认的样式
