@@ -38,8 +38,12 @@
 			</ul>
 		</div> -->
 	</div>
+	<div class="btn">
+		<button id="pre">上一项</button>
+		<button id="next">下一项</button>
+	</div>
 	<script type="text/javascript">
-		$('.wrap').treeNav({
+		var nav = $('.wrap').treeNav({
 			data:[
 				{
 					title:'一级结构',
@@ -55,6 +59,7 @@
 					]
 				}
 			],
+
 			wrapClass: '.wrap',
 			activeCallback:function(){
 				console.log("HELLo")
@@ -72,6 +77,12 @@
 						}
 					],opt.par)
 			}
+		})
+		$('#pre').on('click',function(e){
+			nav.pre();
+		})
+		$('#next').on('click',function(e){
+			nav.next();
 		})
 	</script>
 </body>

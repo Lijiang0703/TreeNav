@@ -65,3 +65,5 @@ data:[
 	'lazyCallback':fn
 }
 ```
+
+### 使用说明:
